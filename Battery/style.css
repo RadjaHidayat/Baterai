@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+/* Gaya untuk elemen baterai */
+.battery {
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    justify-content: flex-start; /* Mulai animasi dari sebelah kiri */
+    align-items: center; /* Center elemen baterai secara vertical */
+    width: 120px; /* Lebar baterai */
+    height: 40px;
+    background-color: #ddd;
+    border: 2px solid #333;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden; /* Menyembunyikan overflow animasi */
+}
+
+/* Gaya untuk ikon petir (karakter Unicode) */
+.battery-icon {
+    font-size: 24px; /* Ukuran ikon */
+    color: #ffff00; /* Warna ikon (kuning) */
+    position: absolute; /* Ikon petir ditempatkan secara absolut */
+    left: 50%; /* Jarak kiri dari elemen baterai */
+    top: 50%; /* Pusat vertikal ikon petir */
+    transform: translate(-50%, -50%); /* Menggeser ikon ke tengah vertikal */
+}
+
+.battery-level {
+    width: 0;
+    height: 100%;
+    background-color: red;
+    border-radius: 3px;
+    transition: width 1s;
+}
